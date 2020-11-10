@@ -1,0 +1,69 @@
+
+body{
+    background-color: rgba(238, 130, 238, .25);
+    font-family: 'Kalam';font-size: 22px;
+    font-size: 16pt;
+    color: #3f3f3f;
+    
+}
+div.about > img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+header{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.navLink{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+a.navItem{
+    text-decoration: none;
+    justify-content: space-between;
+}
+@-webkit-keyframes logo_movement{
+    from {width:25px;}
+    to {width:350px;}
+}
+  
+@keyframes logo_movement{
+    from {width:25px;}
+    to {width:350px;}
+} 
+  
+#logo{
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-name: logo_movement;
+}
+
+.work{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+div.work > img{
+    border: 5px #ffffff solid;
+    margin: 10px;
+    width: 140px;
+    height: 187px
+}
