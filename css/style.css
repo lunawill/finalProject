@@ -1,6 +1,7 @@
 
 body{
     background-image: url('../images/newBackground.JPG');
+    background-attachment: fixed;
     font-family: 'Kalam';font-size: 22px;
     font-size: 16pt;
     color: #3f3f3f;
@@ -8,15 +9,18 @@ body{
     
 }
 
-nav li{
-    display: inline;
-    padding: 10px;
-}
+/*nav li{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
 div.about > img{
     justify-content: center;
     border: 5px #000000 solid;
     margin: 10px;
 }
+
 
 p{
     text-align: center;
@@ -35,10 +39,13 @@ header{
 
 .navLink{
     margin-top: -100px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     list-style: none;
+    text-decoration-line: none;
     
 }
 a.navItem{
