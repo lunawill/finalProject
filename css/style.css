@@ -1,7 +1,10 @@
 
 body{
-    background-image: url('../images/newBackground.JPG');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
     background-attachment: fixed;
+    background-image: url('../images/newBackground.JPG');
     font-family: 'Kalam';font-size: 22px;
     font-size: 16pt;
     color: #3f3f3f;
@@ -14,6 +17,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    <img src="images/NailsLogo.JPG" alt="logo" id = "logo" width= 350px class = "logoImg" >
 } */
 div.about > img{
     justify-content: center;
@@ -21,13 +25,8 @@ div.about > img{
     margin: 10px;
 }
 
-
-p{
-    text-align: center;
-}
-
-h2{
-    text-align: center;
+.logoImg{
+    filter: invert();
 }
 
 header{
@@ -38,7 +37,7 @@ header{
 }
 
 .navLink{
-    margin-top: -100px;
+    margin-top: -40px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -115,3 +114,7 @@ tbody tr:last-child th:first-child{
 tbody tr:last-child td:last-child{
     border-bottom-right-radius: 10px;
 }
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, .2);
+  }
