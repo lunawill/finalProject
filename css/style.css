@@ -37,7 +37,7 @@ header{
 }
 
 .navLink{
-    margin-top: -40px;
+    margin-top: -30px;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -45,7 +45,6 @@ header{
     justify-content: space-evenly;
     list-style: none;
     text-decoration-line: none;
-    
 }
 a.navItem{
     text-decoration: none;
@@ -118,3 +117,129 @@ tbody tr:last-child td:last-child{
 tr:nth-child(even) {
     background-color: rgba(0, 0, 0, .2);
   }
+
+a:hover{
+    font-size: 50px;
+    text-decoration: dashed;
+}
+
+section{     /* start of form style*/
+    margin-top: -100px;
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 0  auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000000;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, .2);
+    margin-top: 5px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    color: rgba(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: rgb(214, 226, 236);
+}
+
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}     /* end of form style*/
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+  @media all and (min-width: 800px){
+
+    .navLink{
+        margin-top: 0px;
+        padding: 0px 25px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        list-style: none;
+        text-decoration-line: none;
+        
+    }
+
+    div.work > img{
+        border: 5px #000000 solid;
+        margin: 10px;
+        width: 250px;
+        height: 333px
+    }
+
+  }
+
+
+
