@@ -35,6 +35,9 @@ header{
     display: flex;
     flex-direction: column;
 }
+a{
+    text-decoration: none;
+}
 
 .navLink{
     margin-top: -30px;
@@ -46,10 +49,18 @@ header{
     list-style: none;
     text-decoration-line: none;
 }
-a.navItem{
-    text-decoration: none;
-    justify-content: space-between;
+
+.curNav{
+    font-size: 1.5em;
 }
+
+footer{
+    font-size: .75em;
+    background-color: rgba(0, 0, 0, .2);
+    text-align: left;
+    
+}
+
 @-webkit-keyframes logo_movement{
     from {width:25px;}
     to {width:350px;}
@@ -88,7 +99,7 @@ table{
 
 .colhead {
     vertical-align: middle;
-    background-color: #d3d3d3d3;
+    background-color: rgba(0, 0, 0, .2);
     padding: 10px;
 }
 
@@ -117,11 +128,6 @@ tbody tr:last-child td:last-child{
 tr:nth-child(even) {
     background-color: rgba(0, 0, 0, .2);
   }
-
-a:hover{
-    font-size: 50px;
-    text-decoration: dashed;
-}
 
 section{     /* start of form style*/
     margin-top: -100px;
@@ -218,7 +224,7 @@ button[type="submit"]:hover{
 }
 
 
-  @media all and (min-width: 800px){
+  @media all and (min-width: 600px){
 
     .navLink{
         margin-top: 0px;
@@ -231,6 +237,14 @@ button[type="submit"]:hover{
         text-decoration-line: none;
         
     }
+    a:hover{
+        font-size: 1.5em;
+        text-decoration: dashed;
+    }
+
+    .curNav{
+        font-size: 1.5em;
+    }
 
     div.work > img{
         border: 5px #000000 solid;
@@ -241,5 +255,8 @@ button[type="submit"]:hover{
 
   }
 
-
-
+  @media ( prefers-reduced-motion: reduce ) {
+    #status{
+      animation: none;
+    }
+  }
